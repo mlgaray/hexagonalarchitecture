@@ -1,0 +1,24 @@
+linters-settings:
+  enable-all: true
+  disable:
+    - megacheck
+
+linters:
+  enable:
+    - deadcode
+    - errcheck
+    - golint
+    - govet
+    - staticcheck
+    - structcheck
+    - varcheck
+
+linters-disable:
+  - type: varcheck
+    # Disable the `unused` check for package `internal`
+    packages: internal
+    enable: false
+
+run:
+  issues-exit-code: 0
+  timeout: 10m

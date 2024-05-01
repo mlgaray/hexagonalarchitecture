@@ -1,0 +1,6 @@
+environment: "test"
+database:
+  host: "test-db-host"
+  port: 5432
+  username: "test-user"
+  password: "test-password"
